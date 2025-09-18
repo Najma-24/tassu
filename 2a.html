@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+  <meta charset="UTF-8"> 
+
+  <title>JavaScript Basics</title> 
+
+  <style> 
+
+    body { 
+
+      font-family: Arial, sans-serif; 
+
+      margin: 20px; 
+
+      background-color: #f9f9f9; 
+
+    } 
+
+    #output { 
+
+      background: #fff; 
+
+      padding: 15px; 
+
+      border-radius: 10px; 
+
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+
+    } 
+
+    h1 { color: #007acc; } 
+
+  </style> 
+
+</head> 
+
+<body> 
+
+ 
+
+  <h1>JavaScript Program — Variables, Functions, and Objects</h1> 
+
+  <div id="output"></div> 
+
+ 
+
+  <script> 
+
+    
+
+    let name = "N S";   
+
+    const pi = 3.14159;     
+
+    var age = 20;          
+
+ 
+
+    
+    function greet(userName) { 
+
+      return "Hello, " + userName + "!"; 
+
+    } 
+
+    const square = (num) => num * num;    
+
+
+
+    const student = { 
+
+      id: "B4", 
+
+      fullName: "N S NAJMA TASNEEM", 
+
+      marks: { math: 85, science: 92 }, 
+
+      displayInfo: function() { 
+
+        return `ID: ${this.id}, Name: ${this.fullName}`; 
+
+      } 
+
+    }; 
+    const out = document.getElementById("output"); 
+
+    out.innerHTML = ` 
+
+      <p><b>Variables:</b><br> 
+
+         name = ${name}, age = ${age}, pi = ${pi}</p> 
+
+      <p><b>Functions:</b><br> 
+
+         greet("N S") → ${greet(name)}<br> 
+
+         square(5) → ${square(5)}</p> 
+
+      <p><b>Object:</b><br> 
+
+         student.displayInfo() → ${student.displayInfo()}<br> 
+
+         Math Marks = ${student.marks.math}, Science Marks = ${student.marks.science}</p> 
+
+    `; 
+
+  </script> 
+
+ 
+
+</body> 
+
+</html> 
+
